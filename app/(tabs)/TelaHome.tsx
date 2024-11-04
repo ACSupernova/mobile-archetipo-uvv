@@ -1,10 +1,9 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image, Dimensions } from 'react-native';
+import { NavigationProp } from '@react-navigation/native';
 
 interface TelaHomeProps {
-  navigation: {
-    navigate: (screen: string) => void;
-  };
+  navigation: NavigationProp<any>;
 }
 
 const TelaHome: React.FC<TelaHomeProps> = ({ navigation }) => {
@@ -13,7 +12,7 @@ const TelaHome: React.FC<TelaHomeProps> = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Image 
-        source={require('@/assets/images/Poke_logo.png')}
+        source={require('@/assets/images/Poke_logo_texto.png')} 
         style={{ width: screenWidth * 0.6, height: 100 }} 
         resizeMode="contain" 
       />
