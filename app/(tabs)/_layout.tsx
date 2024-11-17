@@ -21,6 +21,7 @@ export default function TabLayout() {
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
           ),
+          tabBarStyle: { display: 'none' },  // Esconde a tab bar
         }}
       />
       <Tabs.Screen
@@ -30,15 +31,27 @@ export default function TabLayout() {
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
           ),
+          tabBarStyle: { display: 'none' },  // Esconde a tab bar
         }}
       />
       <Tabs.Screen
-        name="TelaHome"
+        name="home"
         options={{
           title: 'TelaHome',
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
           ),
+          tabBarStyle: { display: 'none' },  // Esconde a tab bar
+        }}
+      />
+      <Tabs.Screen
+        name="grupo"
+        options={{
+          title: 'TelaGrupos',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
+          ),
+          tabBarStyle: { display: 'none' },  // Esconde a tab bar
         }}
       />
     </Tabs>
